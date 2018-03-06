@@ -1,0 +1,17 @@
+LOAD	DATA
+INFILE	*
+INTO	TABLE sysadm.customer_set
+APPEND
+FIELDS	TERMINATED BY ';'
+	(
+	customer_set_id	INTEGER EXTERNAL,
+	customer_set_label
+	)
+BEGINDATA
+2;CUST-02
+3;CUST-03
+4;CUST-04
+5;CUST-05
+6;CUST-06
+7;CUST-07
+8;CUST-08

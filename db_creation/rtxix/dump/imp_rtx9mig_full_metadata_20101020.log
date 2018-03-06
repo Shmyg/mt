@@ -1,0 +1,60 @@
+;;; 
+Import: Release 10.2.0.4.0 - 64bit Production on Wednesday, 20 October, 2010 20:13:10
+
+Copyright (c) 2003, 2007, Oracle.  All rights reserved.
+;;; 
+Connected to: Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+Master table "SHMYG"."SYS_IMPORT_SCHEMA_01" successfully loaded/unloaded
+Starting "SHMYG"."SYS_IMPORT_SCHEMA_01":  userid=shmyg/********@rtxix dumpfile=exp_dp:rtx9mig_full_metadata_20101020.dmp logfile=exp_dp:imp_rtx9mig_full_metadata_20101020.log schemas=sysadm parfile=tablespaces.par transform=storage:n 
+Processing object type DATABASE_EXPORT/SCHEMA/USER
+ORA-31684: Object type USER:"SYSADM" already exists
+Processing object type DATABASE_EXPORT/SCHEMA/GRANT/SYSTEM_GRANT
+Processing object type DATABASE_EXPORT/SCHEMA/ROLE_GRANT
+Processing object type DATABASE_EXPORT/SCHEMA/DEFAULT_ROLE
+Processing object type DATABASE_EXPORT/SCHEMA/TABLESPACE_QUOTA
+Processing object type DATABASE_EXPORT/SCHEMA/PROCACT_SCHEMA
+Processing object type DATABASE_EXPORT/SCHEMA/TABLE/TABLE
+ORA-39151: Table "SYSADM"."UDR_SUM_LT" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "SYSADM"."UDR_SUM_ST" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "SYSADM"."UDR_LT" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "SYSADM"."BI_ACCOUNTS" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "SYSADM"."UDR_ST" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "SYSADM"."UDR_KEY_HOME_PART" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "SYSADM"."UDR_KEY_VPLMN_PART" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+ORA-39151: Table "SYSADM"."UDR_LT_ARCH" exists. All dependent metadata and data will be skipped due to table_exists_action of skip
+Processing object type DATABASE_EXPORT/SCHEMA/TABLE/GRANT/OWNER_GRANT/OBJECT_GRANT
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'BATCH133' does not exist
+Failing sql is:
+GRANT UPDATE ON "SYSADM"."BCH_LT_APPEND" TO "BATCH133"
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'BATCH133' does not exist
+Failing sql is:
+GRANT UPDATE ON "SYSADM"."BCH_ST_APPEND" TO "BATCH133"
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'BATCH133' does not exist
+Failing sql is:
+GRANT UPDATE ON "SYSADM"."UDR_SUM_BCH_LT_APPEND" TO "BATCH133"
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'BATCH133' does not exist
+Failing sql is:
+GRANT UPDATE ON "SYSADM"."UDR_SUM_BCH_ST_APPEND" TO "BATCH133"
+Processing object type DATABASE_EXPORT/SCHEMA/TABLE/INDEX/INDEX
+Processing object type DATABASE_EXPORT/SCHEMA/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type DATABASE_EXPORT/SCHEMA/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type DATABASE_EXPORT/SCHEMA/TABLE/COMMENT
+Processing object type DATABASE_EXPORT/SCHEMA/PACKAGE/PACKAGE_SPEC
+Processing object type DATABASE_EXPORT/SCHEMA/PACKAGE/GRANT/OWNER_GRANT/OBJECT_GRANT
+Processing object type DATABASE_EXPORT/SCHEMA/VIEW/VIEW
+Processing object type DATABASE_EXPORT/SCHEMA/VIEW/GRANT/OWNER_GRANT/OBJECT_GRANT
+ORA-39083: Object type OBJECT_GRANT failed to create with error:
+ORA-01917: user or role 'BATCH133' does not exist
+Failing sql is:
+GRANT SELECT ON "SYSADM"."UDR_LT_ST" TO "BATCH133"
+Processing object type DATABASE_EXPORT/SCHEMA/VIEW/COMMENT
+Processing object type DATABASE_EXPORT/SCHEMA/PACKAGE_BODIES/PACKAGE/PACKAGE_BODY
+ORA-39082: Object type PACKAGE_BODY:"SYSADM"."NEXTFREE" created with compilation warnings
+ORA-39082: Object type PACKAGE_BODY:"SYSADM"."GEN_UDR_DDL" created with compilation warnings
+Processing object type DATABASE_EXPORT/SCHEMA/TABLE/STATISTICS/TABLE_STATISTICS
+Job "SHMYG"."SYS_IMPORT_SCHEMA_01" completed with 16 error(s) at 20:14:35

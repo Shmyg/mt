@@ -1,0 +1,22 @@
+mkdir -p /u01/oracle/rtxix/flash_recovery_area
+mkdir -p /u02/oradata/rtxix/onlinelog
+mkdir -p /u02/oradata/rtxix/controlfile
+mkdir -p /u02/oracle/admin/rtxix/adump
+mkdir -p /u02/oracle/admin/rtxix/bdump
+mkdir -p /u02/oracle/admin/rtxix/cdump
+mkdir -p /u02/oracle/admin/rtxix/udump
+mkdir -p /u02/oradata/rtxix
+mkdir -p /u03/oradata/rtxix/onlinelog
+mkdir -p /u03/oradata/rtxix/controlfile
+mkdir -p /u03/oradata/rtxix
+mkdir -p /u04/oradata/rtxix/onlinelog
+mkdir -p /u04/oradata/rtxix/controlfile
+mkdir -p /u04/oradata/rtxix
+mkdir -p /u05/oradata/rtxix
+mkdir -p /u06/oradata/rtxix
+mkdir -p /u07/oradata/rtxix
+mkdir -p /u08/oradata/rtxix
+mkdir -p /u09/oradata/rtxix
+
+ORACLE_SID=rtxix; export ORACLE_SID
+/opt/oracle/product/10.2.0/Db_1/bin/sqlplus /nolog @rtxix.sql
